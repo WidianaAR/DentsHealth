@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/articleFragment"
+        android:icon="@drawable/ic_article"
+        android:itemTextAppearance="@style/text_nav"
+        android:title="@string/article" />
+    <item
+        android:id="@+id/reminderFragment"
+        android:icon="@drawable/ic_notification"
+        android:itemTextAppearance="@style/text_nav"
+        android:title="@string/reminder" />
+    <item
+        android:id="@+id/historyFragment"
+        android:icon="@drawable/ic_chart"
+        android:itemTextAppearance="@style/text_nav"
+        android:title="@string/history" />
+
+    <item
+        android:id="@+id/symptomsFragment"
+        android:icon="@drawable/ic_symptoms"
+        android:itemTextAppearance="@style/text_nav"
+        android:title="@string/symptoms"/>
+</menu>
