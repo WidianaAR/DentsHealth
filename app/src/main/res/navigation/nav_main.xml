@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/articleFragment"
-        android:name="com.psi.smarttoothcare.ui.article.ArticleFragment"
+        android:name="com.project.dentshealth.ui.article.ArticleFragment"
         android:label="fragment_article"
         tools:layout="@layout/fragment_article" >
         <action
@@ -16,18 +16,18 @@
     </fragment>
     <fragment
         android:id="@+id/reminderFragment"
-        android:name="com.psi.smarttoothcare.ui.reminder.ReminderFragment"
+        android:name="com.project.dentshealth.ui.reminder.ReminderFragment"
         android:label="fragment_reminder"
         tools:layout="@layout/fragment_reminder" >
     </fragment>
     <fragment
         android:id="@+id/historyFragment"
-        android:name="com.psi.smarttoothcare.ui.history.HistoryFragment"
+        android:name="com.project.dentshealth.ui.history.HistoryFragment"
         android:label="fragment_stats"
         tools:layout="@layout/fragment_history" />
     <fragment
         android:id="@+id/articleDetailFragment"
-        android:name="com.psi.smarttoothcare.ui.articledetail.ArticleDetailFragment"
+        android:name="com.project.dentshealth.ui.articledetail.ArticleDetailFragment"
         android:label="fragment_article_detail"
         tools:layout="@layout/fragment_article_detail" >
         <argument

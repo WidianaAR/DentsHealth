@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.psi.smarttoothcare">
+    package="com.project.dentshealth">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -10,7 +10,7 @@
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
 
     <application
-        android:name="com.psi.smarttoothcare.STCApplication"
+        android:name="com.project.dentshealth.STCApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_dents_health"
         android:label="@string/app_name"
@@ -19,14 +19,14 @@
         android:theme="@style/Theme.SmartToothCare"
         tools:ignore="AllowBackup">
         <activity
-            android:name="com.psi.smarttoothcare.ui.RegisterActivity"
+            android:name="com.project.dentshealth.ui.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name="com.psi.smarttoothcare.ui.LoginActivity"
+            android:name="com.project.dentshealth.ui.LoginActivity"
             android:exported="false" />
 
         <receiver
-            android:name="com.psi.smarttoothcare.broadcastreceiver.ReminderReceiver"
+            android:name="com.project.dentshealth.broadcastreceiver.ReminderReceiver"
             android:enabled="true"
             android:exported="true"
             tools:ignore="ExportedReceiver">
@@ -36,10 +36,10 @@
         </receiver>
 
         <activity
-            android:name="com.psi.smarttoothcare.MainActivity"
+            android:name="com.project.dentshealth.MainActivity"
             android:exported="false" />
         <activity
-            android:name="com.psi.smarttoothcare.SplashScreenActivity"
+            android:name="com.project.dentshealth.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

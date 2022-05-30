@@ -176,7 +176,7 @@
         app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/ic_baseline_lock_24">
 
-        <com.psi.smarttoothcare.customview.MyInputPassword
+        <com.project.dentshealth.customview.MyInputPassword
             android:id="@+id/myInputPassword"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -201,7 +201,7 @@
         app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/ic_baseline_lock_24">
 
-        <com.psi.smarttoothcare.customview.MyInputPassword
+        <com.project.dentshealth.customview.MyInputPassword
             android:id="@+id/myInputConfirm"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
