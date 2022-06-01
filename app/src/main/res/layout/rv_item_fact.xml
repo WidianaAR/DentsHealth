@@ -48,6 +48,7 @@
             tools:text="@tools:sample/lorem/random" />
 
         <TextView
+            android:id="@+id/tv_estimation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
