@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="text_bold">
-        <item name="android:textColor">#00323D</item>
-        <item name="android:textStyle">bold</item>
-    </style>
 
     <style name="text_reg_14sp">
         <item name="android:textColor">#00323D</item>
         <item name="android:textSize">14sp</item>
+    </style>
+    
+    <style name="text_reg_26sp">
+        <item name="android:textColor">#00323D</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="text_reg_18sp">
+        <item name="android:textColor">#00323D</item>
+        <item name="android:textSize">18sp</item>
     </style>
 
     <style name="rounded16dp" parent="">
@@ -15,27 +21,4 @@
         <item name="cornerSize">16dp</item>
     </style>
 
-    <style name="text_nav" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
-        <item name="android:textColor">#FFB298</item>
-    </style>
-
-    <style name="BottomNavigationTheme" parent="Theme.AppCompat.Light">
-        <item name="colorPrimary">#00A2C6</item>
-        <item name="android:textColorSecondary">#FFB298</item>
-    </style>
-    <style name="rounded8dp" parent="">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">8dp</item>
-    </style>
-
-    <style name="rounded12dp" parent="">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">12dp</item>
-    </style>
-
-    <style name="roundedBottom16dp" parent="">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSizeBottomLeft">16dp</item>
-        <item name="cornerSizeBottomRight">16dp</item>
-    </style>
 </resources>

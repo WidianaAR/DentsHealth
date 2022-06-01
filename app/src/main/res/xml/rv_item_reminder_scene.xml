@@ -22,7 +22,6 @@
             android:layout_height="match_parent"
             android:translationX="-100dp" />
         <Constraint
-            android:id="@+id/ll_actions"
             motion:layout_constraintStart_toEndOf="@id/cl_container"
             android:layout_width="100dp"
             android:layout_height="0dp"

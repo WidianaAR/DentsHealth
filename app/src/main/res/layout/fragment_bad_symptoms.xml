@@ -53,10 +53,10 @@
 
             <TextView
                 android:id="@+id/greeting"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="60dp"
-                android:text="@string/toothi"
+                android:layout_marginTop="90dp"
+                android:text="@string/can_you_tell_me_how_you_feel"
                 android:textAlignment="center"
                 android:textAppearance="@style/text_reg_26sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -91,55 +91,40 @@
             <ImageView
                 android:layout_width="81dp"
                 android:layout_height="80dp"
-                android:src="@drawable/smile_teeth"
+                android:contentDescription="@string/toothi_name"
                 android:elevation="6dp"
+                android:src="@drawable/sad_teeth"
                 app:layout_constraintBottom_toBottomOf="@+id/circle_dark"
                 app:layout_constraintEnd_toEndOf="@+id/circle_dark"
                 app:layout_constraintStart_toStartOf="@+id/circle_dark"
-                app:layout_constraintTop_toTopOf="@+id/circle_dark"
-                android:contentDescription="@string/toothi_name" />
+                app:layout_constraintTop_toTopOf="@+id/circle_dark" />
 
-            <TextView
-                android:id="@+id/greeting2"
-                android:layout_width="200dp"
-                android:layout_height="68dp"
-                android:layout_marginTop="35dp"
-                android:text="@string/how_are_you_today"
-                android:textAlignment="center"
-                android:textAppearance="@style/text_reg_26sp"
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="370dp"
+                android:layout_marginBottom="100dp"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:boxCornerRadiusBottomStart="20dp"
+                app:boxCornerRadiusTopEnd="20dp"
+                app:boxCornerRadiusTopStart="20dp"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="#BBBBBB"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/circle_light"
-                app:layout_constraintStart_toStartOf="@+id/circle_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/circle_light"
-                app:layout_constraintVertical_bias="0.0" />
+                app:endIconDrawable="@drawable/ic_send"
+                app:endIconMode="custom">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/good_button"
-                android:layout_width="224dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="40dp"
-                android:backgroundTint="#FFB298"
-                android:text="@string/good"
-                android:textAppearance="@style/text_reg_18sp"
-                app:cornerRadius="40dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/greeting2"
-                app:layout_constraintStart_toStartOf="@+id/greeting2"
-                app:layout_constraintTop_toBottomOf="@+id/greeting2"
-                app:layout_constraintVertical_bias="0.0" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/type_here"
+                    android:textColor="#898989"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="224dp"
-                android:layout_height="50dp"
-                android:backgroundTint="#FFB298"
-                android:text="@string/bad"
-                android:textAppearance="@style/text_reg_18sp"
-                app:cornerRadius="40dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/good_button"
-                app:layout_constraintStart_toStartOf="@+id/good_button"
-                app:layout_constraintTop_toBottomOf="@+id/good_button"
-                app:layout_constraintVertical_bias="0.0" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 

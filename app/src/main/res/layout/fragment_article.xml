@@ -14,14 +14,14 @@
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/ellipse_12"
-        app:layout_constraintEnd_toEndOf="@+id/ellipse_12"
-        app:layout_constraintStart_toStartOf="@+id/ellipse_12"
-        app:layout_constraintTop_toTopOf="@+id/ellipse_12"
+        app:layout_constraintBottom_toBottomOf="@+id/header"
+        app:layout_constraintEnd_toEndOf="@+id/header"
+        app:layout_constraintStart_toStartOf="@+id/header"
+        app:layout_constraintTop_toTopOf="@+id/header"
         app:layout_constraintVertical_bias="0.352" />
 
     <View
-        android:id="@+id/ellipse_12"
+        android:id="@+id/header"
         android:layout_width="0dp"
         android:layout_height="119.79dp"
         android:background="@drawable/ellipse"
@@ -33,7 +33,6 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_facts"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="85dp"
