@@ -1,59 +1,53 @@
 <resources>
     <string name="app_name">Dents Health</string>
     <string name="dents_healt">DENTS HEALTH</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="your_reminder">Your Reminder</string>
-    <string name="have_you_brushed_your_teeth_properly_today">Have you brushed your teeth properly today?</string>
+    <string name="your_reminder">Pengingat</string>
+    <string name="have_you_brushed_your_teeth_properly_today">Sudahkah Kamu menyikat gigi hari ini?</string>
     <string name="header_reminder">Header reminder</string>
-    <string name="button_add_new_reminder">Button add new reminder</string>
-    <string name="history">History</string>
-    <string name="button_delete_history">Button delete history</string>
-
+    <string name="button_add_new_reminder">Tombol untuk menambah pengingat</string>
+    <string name="history">Riwayat</string>
+    <string name="button_delete_history">Tombol untuk menghapus riwayat</string>
     <string name="login_google">Masuk dengan Google</string>
     <string name="or">atau</string>
     <string name="error_length">%1$s Harus Lebih dari 5 Karakter</string>
     <string name="email">Email</string>
-    <string name="password">Password</string>
+    <string name="password">Kata Sandi</string>
     <string name="login">Masuk</string>
     <string name="belum_punya_akun">Belum punya akun?</string>
     <string name="daftar_disini">Daftar disini</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="recent_article">Recent Article</string>
-
+    <string name="recent_article">Artikel Terbaru</string>
     <string name="name">Nama</string>
-    <string name="confirm">Konfirmasi Password</string>
+    <string name="confirm">Konfirmasi Kata Sandi</string>
     <string name="masuk_disini">Masuk disini</string>
     <string name="register_google">Daftar dengan google</string>
     <string name="register">Daftar</string>
     <string name="sudah_punya_akun">Sudah punya akun?</string>
-    <string name="article">Article</string>
-    <string name="reminder">Reminder</string>
-    <string name="symptoms">Symptoms</string>
-    <string name="reminder_h">Header reminder</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="article">Artikel</string>
+    <string name="reminder">Pengingat</string>
+    <string name="symptoms">Toothi</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
-    <string name="notification">Notification</string>
-    <string name="stats">Stats</string>
-    <string name="interesting_facts">Interesting Facts</string>
+    <string name="notification">Notifikasi</string>
+    <string name="stats">Status</string>
+    <string name="interesting_facts">Fakta menarik</string>
     <string name="header">header</string>
-    <string name="indicator">Indicator</string>
-    <string name="add_new_reminder">Add new reminder</string>
-    <string name="title">Title</string>
-    <string name="description">Description</string>
-    <string name="time">Time</string>
-    <string name="save">Save</string>
-    <string name="cancel">Cancel</string>
-    <string name="smart_toothcare">Smart Toothcare</string>
-    <string name="update">Update</string>
-    <string name="update_reminder">Update reminder</string>
-    <string name="toothi">Hello, I\'m Toothi</string>
-    <string name="how_are_you_today">How are you today?</string>
-    <string name="good">I feel so great</string>
+    <string name="indicator">Indikator</string>
+    <string name="add_new_reminder">Tambah pengingat baru</string>
+    <string name="title">Judul</string>
+    <string name="description">Deskripsi</string>
+    <string name="time">Waktu</string>
+    <string name="save">Simpan</string>
+    <string name="cancel">Batal</string>
+    <string name="update">Perbarui</string>
+    <string name="update_reminder">Perbarui Pengingat</string>
+    <string name="toothi">Hallo, Aku Toothi</string>
+    <string name="how_are_you_today">Bagaimana kabarmu hari ini?</string>
+    <string name="good">Aku merasa sangat hebat</string>
     <string name="toothi_name">Toothi</string>
-    <string name="bad">I\'m not feeling well</string>
-    <string name="don_t_forget_to_brush_your_teeth_and_smile">Don\'t forget to brush your teeth and smile</string>
-    <string name="so_happy_to_hear_that">So happy to hear that!</string>
-    <string name="can_you_tell_me_how_you_feel">Can you tell me how you feel?</string>
-    <string name="type_here">Type here...</string>
+    <string name="bad">Aku merasa tidak enak badan</string>
+    <string name="don_t_forget_to_brush_your_teeth_and_smile">Jangan lupa sikat gigi dan tersenyum yaa</string>
+    <string name="so_happy_to_hear_that">Aku sangat senang mendengarnya!</string>
+    <string name="can_you_tell_me_how_you_feel">Bisakah kamu memberi tahu apa yang kamu rasakan?</string>
+    <string name="type_here">Tulis disini...</string>
+    <string name="read_time">5 menit</string>
+    <string name="date">2 Juni 2022</string>
 </resources>

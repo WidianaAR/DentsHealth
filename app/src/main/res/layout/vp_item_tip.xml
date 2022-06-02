@@ -62,5 +62,5 @@
         app:layout_constraintEnd_toEndOf="@id/siv_overlay"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="@+id/siv_overlay"
-        tools:text="5 Min Read" />
+        tools:text="@string/read_time" />
 </androidx.constraintlayout.widget.ConstraintLayout>

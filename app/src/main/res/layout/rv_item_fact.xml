@@ -58,6 +58,6 @@
             app:drawableStartCompat="@drawable/ic_estimation_time"
             app:layout_constraintBottom_toBottomOf="@+id/siv_image"
             app:layout_constraintStart_toEndOf="@+id/siv_image"
-            tools:text="5 Min Read" />
+            tools:text="@string/read_time" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

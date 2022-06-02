@@ -49,7 +49,7 @@
             card_view:layout_constraintStart_toEndOf="@id/tv_time"
             card_view:layout_constraintTop_toTopOf="@id/tv_time"
             card_view:layout_constraintVertical_bias="1"
-            tools:text="12 December 2021" />
+            tools:text="@string/date" />
 
         <TextView
             android:id="@id/tv_title"

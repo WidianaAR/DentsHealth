@@ -115,7 +115,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/good_button"
-                android:layout_width="224dp"
+                android:layout_width="270dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="40dp"
                 android:backgroundTint="#FFB298"
@@ -130,7 +130,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/bad_button"
-                android:layout_width="224dp"
+                android:layout_width="270dp"
                 android:layout_height="50dp"
                 android:backgroundTint="#FFB298"
                 android:text="@string/bad"
