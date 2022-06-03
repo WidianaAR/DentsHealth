@@ -19,9 +19,6 @@
         android:theme="@style/Theme.SmartToothCare"
         tools:ignore="AllowBackup">
         <activity
-            android:name="com.project.dentshealth.ui.RegisterActivity"
-            android:exported="false" />
-        <activity
             android:name="com.project.dentshealth.ui.LoginActivity"
             android:exported="false" />
 

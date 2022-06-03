@@ -12,6 +12,7 @@
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.201" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/drawable/ic_chart.xml" value="0.201" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/drawable/ic_delete.xml" value="0.201" />
+        <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/drawable/ic_edit.xml" value="0.1765" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/drawable/ic_estimation_time.xml" value="0.201" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/drawable/ic_evening.xml" value="0.201" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.201" />
@@ -23,25 +24,28 @@
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/drawable/ic_tooth.xml" value="0.201" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/drawable/ic_tooth_color.xml" value="0.201" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/drawable/line.xml" value="0.201" />
+        <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/drawable/login_background.xml" value="0.149" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/drawable/rectangle.xml" value="0.201" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/drawable/switch_thumb.xml" value="0.201" />
-        <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/activity_login.xml" value="0.1369535519125683" />
+        <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/activity_login.xml" value="0.16" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/activity_splash_screen.xml" value="0.153125" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/fragment_add_reminder.xml" value="0.1369535519125683" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/fragment_article.xml" value="0.14" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/fragment_article_detail.xml" value="0.33" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/fragment_bad_symptoms.xml" value="0.18" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/fragment_good_symptoms.xml" value="0.1" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/fragment_history.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/fragment_reminder.xml" value="0.14" />
+        <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/fragment_reminder.xml" value="0.1" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/fragment_symptoms.xml" value="0.22" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/fragment_update_reminder.xml" value="0.18" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/rv_item_fact.xml" value="0.17" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/rv_item_history.xml" value="0.25" />
-        <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/rv_item_reminder.xml" value="0.18" />
+        <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/rv_item_reminder.xml" value="0.1" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/vp_item_tip.xml" value="0.18" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/welcomepage.xml" value="0.1369535519125683" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/menu/menu_bnv_main.xml" value="0.1" />
+        <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/menu/option_menu_main.xml" value="0.153125" />
       </map>
     </option>
   </component>
