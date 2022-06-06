@@ -87,16 +87,15 @@
 
         <androidx.appcompat.widget.AppCompatCheckBox
             android:id="@+id/cb_completed"
+            android:buttonTint="#FFB298"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:minWidth="0dp"
             android:minHeight="0dp"
-            android:thumb="@drawable/switch_thumb"
             card_view:layout_constraintBottom_toTopOf="@+id/ib_delete"
             card_view:layout_constraintEnd_toEndOf="@+id/ib_delete"
             card_view:layout_constraintStart_toStartOf="@+id/ib_delete"
             card_view:layout_constraintTop_toTopOf="parent"
-            card_view:track="@drawable/switch_track"
             tools:text="&#8203;" />
 
         <ImageButton

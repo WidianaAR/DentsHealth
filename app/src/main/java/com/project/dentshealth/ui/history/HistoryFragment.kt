@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.project.dentshealth.databinding.FragmentHistoryBinding
 import dagger.hilt.android.AndroidEntryPoint
 
-
 @AndroidEntryPoint
 class HistoryFragment : Fragment() {
     private var _binding: FragmentHistoryBinding? = null

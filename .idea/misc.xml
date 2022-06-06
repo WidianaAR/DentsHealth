@@ -27,6 +27,7 @@
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/drawable/login_background.xml" value="0.149" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/drawable/rectangle.xml" value="0.201" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/drawable/switch_thumb.xml" value="0.201" />
+        <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/drawable/switch_track.xml" value="0.1555" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/activity_login.xml" value="0.16" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/activity_splash_screen.xml" value="0.153125" />
@@ -40,7 +41,7 @@
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/fragment_symptoms.xml" value="0.22" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/fragment_update_reminder.xml" value="0.18" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/rv_item_fact.xml" value="0.17" />
-        <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/rv_item_history.xml" value="0.25" />
+        <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/rv_item_history.xml" value="0.1" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/rv_item_reminder.xml" value="0.1" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/vp_item_tip.xml" value="0.18" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/welcomepage.xml" value="0.1369535519125683" />

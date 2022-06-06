@@ -20,8 +20,8 @@ object DatabaseModule {
     @Provides
     fun provideSTCDatabase(@ApplicationContext context: Context): STCDatabase {
         return Room
-            .databaseBuilder(context, STCDatabase::class.java, "stc.db")
-            .createFromAsset("smtc.db")
+            .databaseBuilder(context, STCDatabase::class.java, "dhealth.db")
+            .createFromAsset("dentsh.db")
             .build()
     }
 

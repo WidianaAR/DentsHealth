@@ -32,6 +32,7 @@ class ReminderReceiver : BroadcastReceiver() {
     companion object {
         private const val NOTIFICATION_ID = 100
         private const val REMINDER_ID = "reminder_id"
+        private const val REMINDER_USERNAME = "user"
         private const val REMINDER_TITLE = "reminder_title"
         private const val REMINDER_DESCRIPTION = "reminder_description"
         private const val REMINDER_TIME = "reminder_time"
@@ -42,6 +43,7 @@ class ReminderReceiver : BroadcastReceiver() {
 
             val intent = Intent(context, ReminderReceiver::class.java).apply {
                 putExtra(REMINDER_ID, reminder.id)
+                putExtra(REMINDER_USERNAME, reminder.username)
                 putExtra(REMINDER_TITLE, reminder.title)
                 putExtra(REMINDER_DESCRIPTION, reminder.description)
                 putExtra(REMINDER_TIME, reminder.time)
@@ -81,6 +83,7 @@ class ReminderReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {
         val reminderId = intent.getIntExtra(REMINDER_ID, 0)
+        val reminderUsername = intent.getStringExtra(REMINDER_USERNAME)
         val reminderTitle = intent.getStringExtra(REMINDER_TITLE)
         val reminderDescription = intent.getStringExtra(REMINDER_DESCRIPTION)
         val reminderTime = intent.getLongExtra(REMINDER_TIME, 0)
@@ -98,6 +101,7 @@ class ReminderReceiver : BroadcastReceiver() {
             History(
                 reminder = Reminder(
                     id = reminderId,
+                    username = reminderUsername ?: "",
                     title = reminderTitle ?: "",
                     description = reminderDescription ?: "",
                     time = reminderTime

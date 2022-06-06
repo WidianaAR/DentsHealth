@@ -1,9 +1,12 @@
 package com.project.dentshealth
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
@@ -12,14 +15,17 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.project.dentshealth.databinding.ActivityMainBinding
 import com.project.dentshealth.ui.LoginActivity
-import com.project.dentshealth.ui.LoginActivity.Companion.EXTRA_NAME
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
+    val PREFS_LABEL = "DentsHealth"
+    val PREFS_NAME = "user"
+
     private lateinit var binding: ActivityMainBinding
     private lateinit var name: String
     private lateinit var auth: FirebaseAuth
+    private lateinit var sharedPref: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,7 +34,9 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.main_toolbar))
         supportActionBar?.setDisplayShowTitleEnabled(false)
 
-        name = intent.getStringExtra(EXTRA_NAME).toString()
+        sharedPref = getSharedPreferences(PREFS_LABEL, Context.MODE_PRIVATE)
+
+        name = sharedPref.getString(PREFS_NAME, "user").toString()
         auth = Firebase.auth
         val firebaseUser = auth.currentUser
 
@@ -50,6 +58,8 @@ class MainActivity : AppCompatActivity() {
         return when (item.itemId) {
             R.id.logout -> {
                 Firebase.auth.signOut()
+                val prefEdit: SharedPreferences.Editor = sharedPref.edit()
+                prefEdit.clear().apply()
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
                 finish()

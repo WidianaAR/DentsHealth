@@ -1,5 +1,9 @@
 package com.project.dentshealth.ui.reminder
 
+import android.app.Application
+import android.content.Context
+import android.content.SharedPreferences
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.project.dentshealth.model.Reminder
@@ -12,8 +16,14 @@ import timber.log.Timber
 import javax.inject.Inject
 
 @HiltViewModel
-class ReminderViewModel @Inject constructor(private val reminderRepository: ReminderRepository) : ViewModel() {
-    val reminders = reminderRepository.observeReminders()
+class ReminderViewModel @Inject constructor(private val reminderRepository: ReminderRepository, application: Application) : AndroidViewModel(application) {
+    val PREFS_LABEL = "DentsHealth"
+    val PREFS_NAME = "user"
+
+    val sharedPreferences: SharedPreferences = getApplication<Application>().getSharedPreferences(PREFS_LABEL, Context.MODE_PRIVATE)
+    val name: String = sharedPreferences.getString(PREFS_NAME, "user").toString()
+
+    val reminders = reminderRepository.observeReminders(name)
     val time = MutableLiveData<Long>()
     private val compositeDisposable: CompositeDisposable = CompositeDisposable()
 

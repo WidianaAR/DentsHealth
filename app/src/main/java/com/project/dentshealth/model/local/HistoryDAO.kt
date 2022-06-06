@@ -10,11 +10,8 @@ interface HistoryDAO {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun create(history: History)
 
-    @Query("SELECT * FROM History WHERE id = :historyId")
-    fun observeHistory(historyId: Int): LiveData<History>
-
-    @Query("SELECT * FROM History ORDER BY createdAt DESC")
-    fun observeHistories(): LiveData<List<History>>
+    @Query("SELECT * FROM History WHERE reminder_username = :name ORDER BY createdAt DESC")
+    fun observeHistories(name: String): LiveData<List<History>>
 
     @Update
     fun update(history: History)

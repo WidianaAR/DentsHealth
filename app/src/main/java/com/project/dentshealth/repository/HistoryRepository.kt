@@ -14,9 +14,7 @@ class HistoryRepository @Inject constructor(private val historyDAO: HistoryDAO) 
         historyDAO.create(history)
     }.subscribeOn(Schedulers.io())
 
-    fun observeHistories() = historyDAO.observeHistories()
-
-    fun observeHistory(historyId: Int) = historyDAO.observeHistory(historyId)
+    fun observeHistories(name: String) = historyDAO.observeHistories(name)
 
     fun update(history: History): Completable = Completable.fromAction {
         historyDAO.update(history)

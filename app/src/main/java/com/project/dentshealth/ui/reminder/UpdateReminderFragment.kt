@@ -1,14 +1,18 @@
 package com.project.dentshealth.ui.reminder
 
 import android.app.TimePickerDialog
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TimePicker
+import android.widget.Toast
 import androidx.fragment.app.viewModels
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.snackbar.Snackbar
+import com.project.dentshealth.MainActivity
 import com.project.dentshealth.broadcastreceiver.ReminderReceiver
 import com.project.dentshealth.model.Reminder
 import com.project.dentshealth.utils.makeSnackbar
@@ -19,9 +23,12 @@ import java.util.*
 
 @AndroidEntryPoint
 class UpdateReminderFragment : BottomSheetDialogFragment(), TimePickerDialog.OnTimeSetListener {
+    val PREFS_LABEL = "DentsHealth"
+    val PREFS_NAME = "user"
     private var _binding: FragmentUpdateReminderBinding? = null
     private val binding get() = _binding!!
     private lateinit var timePickerDialog: TimePickerDialog
+    private lateinit var sharedPreferences: SharedPreferences
     private val reminderViewModel by viewModels<ReminderViewModel>(ownerProducer = { requireParentFragment() })
 
     companion object {
@@ -31,6 +38,11 @@ class UpdateReminderFragment : BottomSheetDialogFragment(), TimePickerDialog.OnT
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         _binding = FragmentUpdateReminderBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        sharedPreferences = context.getSharedPreferences(PREFS_LABEL, Context.MODE_PRIVATE)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -54,6 +66,7 @@ class UpdateReminderFragment : BottomSheetDialogFragment(), TimePickerDialog.OnT
                 getParcelable<Reminder>(ARG_REMINDER)?.let { reminder ->
                     reminderViewModel.time.value?.let { time ->
                         val newReminder = reminder.copy(
+                            username = sharedPreferences.getString(PREFS_NAME, "user").toString(),
                             title = binding.etTitle.text.toString(),
                             description = binding.etDescription.text.toString(),
                             time = time

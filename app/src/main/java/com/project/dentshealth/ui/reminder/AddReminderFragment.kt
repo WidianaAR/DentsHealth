@@ -1,11 +1,14 @@
 package com.project.dentshealth.ui.reminder
 
 import android.app.TimePickerDialog
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TimePicker
+import android.widget.Toast
 import androidx.fragment.app.viewModels
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.snackbar.Snackbar
@@ -19,9 +22,12 @@ import java.util.*
 
 @AndroidEntryPoint
 class AddReminderFragment : BottomSheetDialogFragment(), TimePickerDialog.OnTimeSetListener {
+    val PREFS_LABEL = "DentsHealth"
+    val PREFS_NAME = "user"
     private var _binding: FragmentAddReminderBinding? = null
     private val binding get() = _binding!!
     private lateinit var timePickerDialog: TimePickerDialog
+    private lateinit var sharedPreferences: SharedPreferences
     private val reminderViewModel by viewModels<ReminderViewModel>(ownerProducer = { requireParentFragment() })
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
@@ -29,16 +35,23 @@ class AddReminderFragment : BottomSheetDialogFragment(), TimePickerDialog.OnTime
         return binding.root
     }
 
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        sharedPreferences = context.getSharedPreferences(PREFS_LABEL, Context.MODE_PRIVATE)
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         setupTimePicker()
 
+        val name: String = sharedPreferences.getString(PREFS_NAME, "user").toString()
         binding.btnSave.setOnClickListener {
             if (!valid()) return@setOnClickListener
 
             reminderViewModel.time.value?.let {
                 val reminder = Reminder(
+                    username = name,
                     title = binding.etTitle.text.toString(),
                     description = binding.etDescription.text.toString(),
                     time = it
