@@ -10,7 +10,7 @@
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
 
     <application
-        android:name="com.project.dentshealth.STCApplication"
+        android:name=".STCApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_dents_health"
         android:label="@string/app_name"
@@ -19,11 +19,14 @@
         android:theme="@style/Theme.SmartToothCare"
         tools:ignore="AllowBackup">
         <activity
-            android:name="com.project.dentshealth.ui.LoginActivity"
+            android:name=".ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.LoginActivity"
             android:exported="false" />
 
         <receiver
-            android:name="com.project.dentshealth.broadcastreceiver.ReminderReceiver"
+            android:name=".broadcastreceiver.ReminderReceiver"
             android:enabled="true"
             android:exported="true"
             tools:ignore="ExportedReceiver">
@@ -33,10 +36,10 @@
         </receiver>
 
         <activity
-            android:name="com.project.dentshealth.MainActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name="com.project.dentshealth.SplashScreenActivity"
+            android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
