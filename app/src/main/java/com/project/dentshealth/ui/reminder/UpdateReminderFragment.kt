@@ -40,11 +40,6 @@ class UpdateReminderFragment : BottomSheetDialogFragment(), TimePickerDialog.OnT
         return binding.root
     }
 
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-        sharedPreferences = context.getSharedPreferences(PREFS_LABEL, Context.MODE_PRIVATE)
-    }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -66,7 +61,6 @@ class UpdateReminderFragment : BottomSheetDialogFragment(), TimePickerDialog.OnT
                 getParcelable<Reminder>(ARG_REMINDER)?.let { reminder ->
                     reminderViewModel.time.value?.let { time ->
                         val newReminder = reminder.copy(
-                            username = sharedPreferences.getString(PREFS_NAME, "user").toString(),
                             title = binding.etTitle.text.toString(),
                             description = binding.etDescription.text.toString(),
                             time = time

@@ -16,14 +16,8 @@ import timber.log.Timber
 import javax.inject.Inject
 
 @HiltViewModel
-class HistoryViewModel @Inject constructor(private val historyRepository: HistoryRepository, application: Application) : AndroidViewModel(application) {
-    val PREFS_LABEL = "DentsHealth"
-    val PREFS_NAME = "user"
-
-    val sharedPreferences: SharedPreferences = getApplication<Application>().getSharedPreferences(PREFS_LABEL, Context.MODE_PRIVATE)
-    val name: String = sharedPreferences.getString(PREFS_NAME, "user").toString()
-
-    val histories = historyRepository.observeHistories(name)
+class HistoryViewModel @Inject constructor(private val historyRepository: HistoryRepository) : ViewModel() {
+    val histories = historyRepository.observeHistories()
     private val compositeDisposable: CompositeDisposable = CompositeDisposable()
 
     fun create(history: History) {

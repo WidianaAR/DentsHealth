@@ -16,14 +16,8 @@ import timber.log.Timber
 import javax.inject.Inject
 
 @HiltViewModel
-class ReminderViewModel @Inject constructor(private val reminderRepository: ReminderRepository, application: Application) : AndroidViewModel(application) {
-    val PREFS_LABEL = "DentsHealth"
-    val PREFS_NAME = "user"
-
-    val sharedPreferences: SharedPreferences = getApplication<Application>().getSharedPreferences(PREFS_LABEL, Context.MODE_PRIVATE)
-    val name: String = sharedPreferences.getString(PREFS_NAME, "user").toString()
-
-    val reminders = reminderRepository.observeReminders(name)
+class ReminderViewModel @Inject constructor(private val reminderRepository: ReminderRepository) : ViewModel() {
+    val reminders = reminderRepository.observeReminders()
     val time = MutableLiveData<Long>()
     private val compositeDisposable: CompositeDisposable = CompositeDisposable()
 

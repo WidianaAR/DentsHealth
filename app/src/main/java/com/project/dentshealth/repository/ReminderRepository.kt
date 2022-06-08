@@ -14,7 +14,7 @@ class ReminderRepository @Inject constructor(private val reminderDAO: ReminderDA
         reminderDAO.create(reminder)
     }.subscribeOn(Schedulers.io())
 
-    fun observeReminders(name:String) = reminderDAO.observeReminders(name)
+    fun observeReminders() = reminderDAO.observeReminders()
 
 //    fun observeReminder(reminderId: Int) = reminderDAO.observeReminder(reminderId)
 

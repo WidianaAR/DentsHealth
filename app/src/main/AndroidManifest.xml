@@ -21,9 +21,6 @@
         <activity
             android:name=".ResultActivity"
             android:exported="false" />
-        <activity
-            android:name=".ui.LoginActivity"
-            android:exported="false" />
 
         <receiver
             android:name=".broadcastreceiver.ReminderReceiver"

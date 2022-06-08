@@ -25,6 +25,7 @@ import java.nio.channels.FileChannel
 
 class ResultActivity : AppCompatActivity() {
     private val max_len = 130
+//    private var interpreter: Interpreter? = null
 
     private lateinit var binding: ActivityResultBinding
 
@@ -34,13 +35,13 @@ class ResultActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val classifier = ModelClassifier( this, "word_dict.json", max_len)
-//
+
 //        try {
 //            interpreter = Interpreter(loadModelFile())
 //        }catch (ex: Exception){
-//            showText(ex.toString())
+//            binding.tvResult.text = ex.toString()
 //        }
-//
+
         val progressDialog = ProgressDialog(this)
         progressDialog.setMessage( "Parsing word_dict.json ..." )
         progressDialog.setCancelable( false )
@@ -54,22 +55,22 @@ class ResultActivity : AppCompatActivity() {
 //        val data = intent.getStringExtra("SYMPTOMS").toString()
 //        showText(data)
 
-//        val localModel = FirebaseCustomLocalModel.Builder()
-//            .setAssetFilePath("model_dh.tflite")
-//            .build()
-
-//        val options = FirebaseModelInterpreterOptions.Builder(localModel).build()
-//        val interpreter = FirebaseModelInterpreter.getInstance(options)
-
-        val remoteModel = FirebaseCustomRemoteModel.Builder("model_dh").build()
-        val condition = FirebaseModelDownloadConditions.Builder()
-            .requireWifi()
+        val localModel = FirebaseCustomLocalModel.Builder()
+            .setAssetFilePath("model.tflite")
             .build()
-//
-        FirebaseModelManager.getInstance().download(remoteModel, condition)
 
-        val options = FirebaseModelInterpreterOptions.Builder(remoteModel).build()
+        val options = FirebaseModelInterpreterOptions.Builder(localModel).build()
         val interpreter = FirebaseModelInterpreter.getInstance(options)
+
+//        val remoteModel = FirebaseCustomRemoteModel.Builder("model_dh").build()
+//        val condition = FirebaseModelDownloadConditions.Builder()
+//            .requireWifi()
+//            .build()
+//
+//        FirebaseModelManager.getInstance().download(remoteModel, condition)
+////
+//        val options = FirebaseModelInterpreterOptions.Builder(remoteModel).build()
+//        val interpreter = FirebaseModelInterpreter.getInstance(options)
 
 //        FirebaseModelManager.getInstance().isModelDownloaded(remoteModel)
 //            .addOnSuccessListener { isDownloaded ->
@@ -89,6 +90,18 @@ class ResultActivity : AppCompatActivity() {
 
         val data = "Ada lapisan kasar dan keras di garis gusi saya"
         data.toLowerCase().trim()
+
+//        if ( !TextUtils.isEmpty( data ) ){
+//                // Tokenize and pad the given input text.
+//                val tokenizedMessage = classifier.tokenize( data )
+//                val paddedMessage = classifier.padSequence( tokenizedMessage )
+//
+//                val results = classifySequence( paddedMessage )
+//                showText(results)
+//            }
+//            else{
+//                showText("Please enter a message")
+//            }
 
         if ( !TextUtils.isEmpty(data) ){
             // Tokenize and pad the given input text.
@@ -117,7 +130,7 @@ class ResultActivity : AppCompatActivity() {
 
 //    @Throws(IOException::class)
 //    private fun loadModelFile(): MappedByteBuffer {
-//        val assetFileDescriptor = assets.openFd("model_dh.tflite")
+//        val assetFileDescriptor = assets.openFd("model_buffer.tflite")
 //        val fileInputStream = FileInputStream(assetFileDescriptor.fileDescriptor)
 //        val fileChannel = fileInputStream.channel
 //        val startOffset = assetFileDescriptor.startOffset
@@ -125,8 +138,8 @@ class ResultActivity : AppCompatActivity() {
 //        return fileChannel.map(FileChannel.MapMode.READ_ONLY, startOffset, declaredLength)
 //    }
 
-    fun <T : Comparable<T>> Array<T>.argmax(): Int? {
-        return withIndex().maxByOrNull { it.value }?.index
+    private fun IntArray.argmax(): Int {
+        return withIndex().maxByOrNull { it.value }!!.index
     }
 
 //    private fun classifySequence (sequence : IntArray ): String {
