@@ -19,7 +19,7 @@
         android:theme="@style/Theme.SmartToothCare"
         tools:ignore="AllowBackup">
         <activity
-            android:name=".ResultActivity"
+            android:name=".ui.symptoms.ResultActivity"
             android:exported="false" />
 
         <receiver
