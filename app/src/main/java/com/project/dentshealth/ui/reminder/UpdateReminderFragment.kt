@@ -23,12 +23,9 @@ import java.util.*
 
 @AndroidEntryPoint
 class UpdateReminderFragment : BottomSheetDialogFragment(), TimePickerDialog.OnTimeSetListener {
-    val PREFS_LABEL = "DentsHealth"
-    val PREFS_NAME = "user"
     private var _binding: FragmentUpdateReminderBinding? = null
     private val binding get() = _binding!!
     private lateinit var timePickerDialog: TimePickerDialog
-    private lateinit var sharedPreferences: SharedPreferences
     private val reminderViewModel by viewModels<ReminderViewModel>(ownerProducer = { requireParentFragment() })
 
     companion object {

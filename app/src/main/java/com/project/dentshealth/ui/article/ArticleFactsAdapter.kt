@@ -22,7 +22,6 @@ class ArticleFactsAdapter : RecyclerView.Adapter<ArticleFactsAdapter.ViewHolder>
 
         fun bind(article: Article) {
             binding.tvTitle.text = article.title
-            binding.tvEstimation.text = article.estimation
             Glide.with(itemView).load(article.image).into(binding.sivImage)
         }
     }

@@ -26,7 +26,6 @@ class ArticleFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         setupFactsRecyclerView()
-        setupTipsViewPager2()
     }
 
     private fun setupFactsRecyclerView() {
@@ -45,19 +44,6 @@ class ArticleFragment : Fragment() {
         binding.rvFacts.apply {
             adapter = factsAdapter
             layoutManager = factsLayoutManager
-        }
-    }
-
-    private fun setupTipsViewPager2() {
-        val tipsAdapter = ArticleTipsAdapter()
-
-        tipsAdapter.setOnItemClickListener {
-            val action = ArticleFragmentDirections.actionArticleFragmentToArticleDetailFragment(it.url)
-            findNavController().navigate(action)
-        }
-
-        articleViewModel.tips.observe(viewLifecycleOwner) {
-            tipsAdapter.differ.submitList(it)
         }
     }
 
