@@ -18,9 +18,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartToothCare"
         tools:ignore="AllowBackup">
-        <activity
-            android:name=".ui.symptoms.ResultActivity"
-            android:exported="false" />
 
         <receiver
             android:name=".broadcastreceiver.ReminderReceiver"

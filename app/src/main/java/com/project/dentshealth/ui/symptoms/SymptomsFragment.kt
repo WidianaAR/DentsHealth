@@ -12,7 +12,7 @@ import com.project.dentshealth.databinding.FragmentSymptomsBinding
 class SymptomsFragment : Fragment(), View.OnClickListener {
     private lateinit var binding: FragmentSymptomsBinding
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         binding = FragmentSymptomsBinding.inflate(inflater, container, false)
         return binding.root
     }

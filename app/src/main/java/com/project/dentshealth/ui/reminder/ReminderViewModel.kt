@@ -1,9 +1,5 @@
 package com.project.dentshealth.ui.reminder
 
-import android.app.Application
-import android.content.Context
-import android.content.SharedPreferences
-import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.project.dentshealth.model.Reminder

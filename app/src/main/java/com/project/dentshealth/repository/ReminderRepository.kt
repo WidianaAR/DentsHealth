@@ -16,8 +16,6 @@ class ReminderRepository @Inject constructor(private val reminderDAO: ReminderDA
 
     fun observeReminders() = reminderDAO.observeReminders()
 
-//    fun observeReminder(reminderId: Int) = reminderDAO.observeReminder(reminderId)
-
     fun update(reminder: Reminder): Completable = Completable.fromAction {
         reminderDAO.update(reminder)
     }.subscribeOn(Schedulers.io())

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.symptoms.BadSymptomsFragment">
+    tools:context=".ui.symptoms.ResultSymptomsFragment">
 
     <TextView
         android:id="@+id/title_symptoms"
@@ -52,13 +52,12 @@
             android:background="@color/white">
 
             <TextView
-                android:id="@+id/greeting"
+                android:id="@+id/result"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="90dp"
-                android:text="@string/can_you_tell_me_how_you_feel"
                 android:textAlignment="center"
-                android:textAppearance="@style/text_reg_26sp"
+                android:textAppearance="@style/text_reg_14sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -69,13 +68,13 @@
                 android:id="@+id/circle_dark"
                 android:layout_width="123dp"
                 android:layout_height="123dp"
-                android:layout_marginTop="35dp"
+                android:layout_marginTop="100dp"
                 android:background="@drawable/circle_dark"
                 android:elevation="5dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/greeting"
+                app:layout_constraintTop_toBottomOf="@+id/result"
                 app:layout_constraintVertical_bias="0.0" />
 
             <View
@@ -93,41 +92,23 @@
                 android:layout_height="80dp"
                 android:contentDescription="@string/toothi_name"
                 android:elevation="6dp"
-                android:src="@drawable/sad_teeth"
+                android:src="@drawable/result_teeth"
                 app:layout_constraintBottom_toBottomOf="@+id/circle_dark"
                 app:layout_constraintEnd_toEndOf="@+id/circle_dark"
                 app:layout_constraintStart_toStartOf="@+id/circle_dark"
                 app:layout_constraintTop_toTopOf="@+id/circle_dark" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/tl_user_symptoms"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="40dp"
-                android:layout_marginTop="370dp"
-                android:layout_marginBottom="100dp"
-                app:boxCornerRadiusBottomEnd="20dp"
-                app:boxCornerRadiusBottomStart="20dp"
-                app:boxCornerRadiusTopEnd="20dp"
-                app:boxCornerRadiusTopStart="20dp"
-                app:boxBackgroundColor="@color/white"
-                app:boxStrokeColor="#BBBBBB"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/circle_light"
-                app:endIconDrawable="@drawable/ic_send"
-                app:endIconMode="custom">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/ti_user_symptoms"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="@string/type_here"
-                    android:textColor="#898989"/>
-            </com.google.android.material.textfield.TextInputLayout>
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/result_page_loading"
+        android:elevation="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

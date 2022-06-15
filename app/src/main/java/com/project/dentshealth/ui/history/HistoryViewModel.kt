@@ -1,14 +1,9 @@
 package com.project.dentshealth.ui.history
 
-import android.app.Application
-import android.content.Context
-import android.content.SharedPreferences
-import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.ViewModel
 import com.project.dentshealth.model.History
 import com.project.dentshealth.repository.HistoryRepository
 import com.project.dentshealth.utils.plusAssign
-import dagger.hilt.android.internal.Contexts.getApplication
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.disposables.CompositeDisposable

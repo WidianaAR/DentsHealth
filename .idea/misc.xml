@@ -36,12 +36,14 @@
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/activity_result.xml" value="0.153125" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/activity_splash_screen.xml" value="0.153125" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/fragment_add_reminder.xml" value="0.1369535519125683" />
+        <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/fragment_addition_symptoms.xml" value="0.18" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/fragment_article.xml" value="0.17" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/fragment_article_detail.xml" value="0.33" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/fragment_bad_symptoms.xml" value="0.18" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/fragment_good_symptoms.xml" value="0.1" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/fragment_history.xml" value="0.33" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/fragment_reminder.xml" value="0.1" />
+        <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/fragment_result_symptoms.xml" value="0.153125" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/fragment_symptoms.xml" value="0.22" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/fragment_update_reminder.xml" value="0.18" />
         <entry key="..\:/Users/widia/AndroidStudioProjects/dents_health/app/src/main/res/layout/rv_item_fact.xml" value="0.33" />

@@ -47,8 +47,10 @@
     <string name="don_t_forget_to_brush_your_teeth_and_smile">Jangan lupa sikat gigi dan tersenyum yaa</string>
     <string name="so_happy_to_hear_that">Aku sangat senang mendengarnya!</string>
     <string name="can_you_tell_me_how_you_feel">Bisakah kamu memberi tahu apa yang kamu rasakan?</string>
-    <string name="type_here">Tulis disini...</string>
+    <string name="can_you_tell_me_how_you_feel_2">Makanan apa yg akhir2 ini anda makan? atau ada hal lain yang ingin anda tambahkan?</string>
+    <string name="type_here">Tulis disini…</string>
     <string name="date">2 Juni 2022</string>
     <string name="username">Nama User</string>
     <string name="logout">Keluar</string>
+    <string name="network_warning">Maaf, gangguan jaringan. Silahkan coba lagi</string>
 </resources>

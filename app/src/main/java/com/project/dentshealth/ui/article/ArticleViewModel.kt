@@ -14,25 +14,15 @@ import javax.inject.Inject
 @HiltViewModel
 class ArticleViewModel @Inject constructor(private val articleRepository: ArticleRepository) : ViewModel() {
     val facts = MutableLiveData<List<Article>>()
-    val tips = MutableLiveData<List<Article>>()
     private val compositeDisposable: CompositeDisposable = CompositeDisposable()
 
     init {
         initFacts()
-        initTips()
     }
 
     private fun initFacts() {
         compositeDisposable += articleRepository.getFacts().observeOn(AndroidSchedulers.mainThread()).subscribe({
             facts.postValue(it)
-        }) {
-            Timber.e(it)
-        }
-    }
-
-    private fun initTips() {
-        compositeDisposable += articleRepository.getTips().observeOn(AndroidSchedulers.mainThread()).subscribe({
-            tips.postValue(it)
         }) {
             Timber.e(it)
         }

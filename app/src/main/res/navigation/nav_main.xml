@@ -58,5 +58,25 @@
         android:name="com.project.dentshealth.ui.symptoms.BadSymptomsFragment"
         android:label="fragment_bad_symptoms"
         tools:layout="@layout/fragment_bad_symptoms" >
+        <action
+            android:id="@+id/action_badSymptomsFragment_to_additionSymptomsFragment"
+            app:destination="@id/additionSymptomsFragment"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/additionSymptomsFragment"
+        android:name="com.project.dentshealth.ui.symptoms.AdditionSymptomsFragment"
+        android:label="fragment_addition_symptoms"
+        tools:layout="@layout/fragment_addition_symptoms" >
+        <action
+            android:id="@+id/action_additionSymptomsFragment_to_resultSymptomsFragment"
+            app:destination="@id/resultSymptomsFragment"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultSymptomsFragment"
+        android:name="com.project.dentshealth.ui.symptoms.ResultSymptomsFragment"
+        android:label="fragment_result_symptoms"
+        tools:layout="@layout/fragment_result_symptoms" >
     </fragment>
 </navigation>

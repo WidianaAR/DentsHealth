@@ -15,8 +15,4 @@ class ArticleRepository @Inject constructor(
     fun getFacts(): Single<List<Article>> {
         return articleService.getFacts().subscribeOn(Schedulers.io())
     }
-
-    fun getTips(): Single<List<Article>> {
-        return articleService.getTips().subscribeOn(Schedulers.io())
-    }
 }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.symptoms.BadSymptomsFragment">
+    tools:context=".ui.symptoms.AdditionSymptomsFragment">
 
     <TextView
         android:id="@+id/title_symptoms"
@@ -55,8 +55,8 @@
                 android:id="@+id/greeting"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="90dp"
-                android:text="@string/can_you_tell_me_how_you_feel"
+                android:layout_marginTop="70dp"
+                android:text="@string/can_you_tell_me_how_you_feel_2"
                 android:textAlignment="center"
                 android:textAppearance="@style/text_reg_26sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -104,27 +104,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="40dp"
-                android:layout_marginTop="370dp"
+                android:layout_marginTop="400dp"
                 android:layout_marginBottom="100dp"
+                app:boxBackgroundColor="@color/white"
                 app:boxCornerRadiusBottomEnd="20dp"
                 app:boxCornerRadiusBottomStart="20dp"
                 app:boxCornerRadiusTopEnd="20dp"
                 app:boxCornerRadiusTopStart="20dp"
-                app:boxBackgroundColor="@color/white"
                 app:boxStrokeColor="#BBBBBB"
+                app:endIconDrawable="@drawable/ic_send"
+                app:endIconMode="custom"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/circle_light"
-                app:endIconDrawable="@drawable/ic_send"
-                app:endIconMode="custom">
+                app:layout_constraintTop_toBottomOf="@+id/circle_light">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/ti_user_symptoms"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:hint="@string/type_here"
-                    android:textColor="#898989"/>
+                    android:textColor="#898989" />
             </com.google.android.material.textfield.TextInputLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
